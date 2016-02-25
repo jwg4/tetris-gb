@@ -265,7 +265,7 @@ class Window(object):
                 elif (event.key == pygame.K_DOWN):
                     if self.game.block.can_move(self.game, DOWN):
                         self.game.block.move(DOWN)
-                self.game.last_event = time.time()
+                        self.game.last_event = time.time()
                 break
 
         # Continuous key presses

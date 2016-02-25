@@ -47,6 +47,7 @@ class Game(object):
         elif ((self.block.can_move(self, DOWN)) and (time.time() - self.last_drop > self.level.fall_speed)):
             self.block.move(DOWN)
             self.last_drop = time.time()
+            self.last_event = time.time()
     def update_state(self):
         def remove_lines():
             def is_full(line):
